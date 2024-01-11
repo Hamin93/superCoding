@@ -4,7 +4,7 @@
 
 *   {font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; box-sizing: border-box;}
 
-#contents       {width:100%; max-width:1000px; margin:20px auto;}
+#contents       {width:100%; max-width:1000px; margin:30px auto 100px auto;}
 
 .week_req               {width:100%; background:#f5f5f5; padding:20px 25px 25px;}
 .week_req > p           {font-weight:700; font-size:18px; margin-bottom:12px;}
