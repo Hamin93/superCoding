@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,73 @@
     <title>단어퍼즐 만들기</title>
 
     <style>
-    .contBox    {width:100%; text-align:center;}
+        .contBox {
+            width: 100%;
+            text-align: center;
+        }
 
-    .time           {font-weight:700; font-size:23px; text-align:center; margin-top:20px;}
-    .line           {margin:20px 0 40px 0;}
-    .line > p       {display:flex; justify-content: center;}
-    .line > p span  {display:flex; justify-content: center; align-items: center; text-transform: uppercase; width:60px; height:60px; text-align:center; border:2px solid #ddd; margin:1px 3px; font-size:25px; font-weight:900}
+        /*테스트*/
 
-    .keyboard                   {width:100%;}
-    .keyboard > p               {display:flex; justify-content: center;}
-    .keyboard > p button        {cursor:pointer; border:none; margin:3px; font:900 21px/21px "Noto Sans KR", sans-self; width:50px; height:70px; border-radius: 5px; background:#f1f1f1; display:flex; justify-content: center; align-items: center;}
-    .keyboard > p button.long   {font-size:15px; width:110px}
-</style>
+        .time {
+            font-weight: 700;
+            font-size: 23px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .line {
+            margin: 20px 0 40px 0;
+        }
+
+        .line>p {
+            display: flex;
+            justify-content: center;
+        }
+
+        .line>p span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            border: 2px solid #ddd;
+            margin: 1px 3px;
+            font-size: 25px;
+            font-weight: 900
+        }
+
+        .keyboard {
+            width: 100%;
+        }
+
+        .keyboard>p {
+            display: flex;
+            justify-content: center;
+        }
+
+        .keyboard>p button {
+            cursor: pointer;
+            border: none;
+            margin: 3px;
+            font: 900 21px/21px "Noto Sans KR", sans-self;
+            width: 50px;
+            height: 70px;
+            border-radius: 5px;
+            background: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .keyboard>p button.long {
+            font-size: 15px;
+            width: 110px
+        }
+    </style>
 </head>
+
 <body id="contents">
     <div class="week_req">
         <p>[Requirements] Wordle 만들기</p>
@@ -114,10 +169,11 @@
                 <button data-key="N">N</button>
                 <button data-key="M">M</button>
                 <button class="long" data-key="BACKSPACE">BACKSPACE</button>
-        </p>
+            </p>
         </div>
     </div>
-        
+
     <script src="week2.js"></script>
 </body>
+
 </html>
